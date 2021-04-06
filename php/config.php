@@ -1,9 +1,9 @@
 <?php
 // database logingegevens
 $db_hostename = 'localhost'; // of '127.0.0.1'
-$db_username = 'beroeps26';
-$db_password = '4Eelp33?';
-$db_database = 'beroeps26';
+$db_username = '4260nl';
+$db_password = '0SRFa0wP';
+$db_database = '4260nl_excursie';
 
 $verbinding = mysqli_connect($db_hostename, $db_username, $db_password, $db_database);
 
