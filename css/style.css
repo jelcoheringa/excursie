@@ -85,6 +85,11 @@ body{
     background-color: #67b807;!important;
     border-color: #8FE507;
 }
+.likeButton{
+    border: none;
+    background: none;
+    text-decoration: none;
+}
 @media only screen and (max-width: 767px) {
     .loginBoxDiv{
         width: 100%;
