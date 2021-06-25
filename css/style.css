@@ -1,0 +1,98 @@
+html{
+    margin: 0;
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    overflow: auto;!important;
+}
+.container-fluid{
+    height: 100%;
+}
+.col-md-6{
+    padding: 0;
+    margin: 0;
+}
+.row{
+    height: 100%;
+}
+.navbar-brand{
+    height: 38px;
+    padding: 0;
+}
+
+#navlogo{
+    height: 40px;
+}
+.fotoSide{
+    background-color: #8FE507;
+    background-image: url("../img/graffiti-wall-brick.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+}
+.loginside{
+    background-image: url("img/graffiti-wall-brick.jpg");!important;
+}
+
+/*login style*/
+.loginBoxDiv{
+    margin: 1em auto;
+    max-width: 350px;
+}
+.loginBoxDiv .form-group{
+    margin-bottom: 0.5em;
+}
+.loginBoxDiv .canvas{
+    margin-top: 0.5em;
+    width: 100%;
+    background-color: rgba(248, 249, 250, 0.93);!important;
+}
+.newpostbox{
+    margin: 1em auto;
+    max-width: 500px;
+}
+.newpostbox .form-group{
+    margin-bottom: 0.5em;
+}
+.newpostbox .canvas{
+    margin-top: 0.5em;
+    width: 100%;
+    background-color: rgba(248, 249, 250, 0.93);!important;
+}
+.postimg{
+    width: 80%;
+}
+.errorBox{
+    margin: 1em auto;
+    max-width: 350px;
+}
+.btn-primary{
+    background-color: #8FE507;!important;
+    border-color: #8FE507;
+}
+.card{
+    margin-top: 1em;
+}
+.list-group{
+    margin-top: 1em;
+}
+.post{
+    padding-top: 1em;
+}
+.btn-primary:hover{
+    background-color: #67b807;!important;
+    border-color: #8FE507;
+}
+@media only screen and (max-width: 767px) {
+    .loginBoxDiv{
+        width: 100%;
+    }
+    .col{
+        width: 100%;
+    }
+    .fotoSide{
+        height: 20px;
+    }
+}

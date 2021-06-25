@@ -5,9 +5,9 @@ $db_username = '4260nl';
 $db_password = '0SRFa0wP';
 $db_database = '4260nl_excursie';
 
-$verbinding = mysqli_connect($db_hostename, $db_username, $db_password, $db_database);
+$mysqli = mysqli_connect($db_hostename, $db_username, $db_password, $db_database);
 
-if (!$verbinding) {
+if (!$mysqli) {
 
     echo "FOUT: geen connectie naar database. <br>";
     echo "Errno: " . mysqli_connect_errno() . "<br>";
