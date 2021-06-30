@@ -5,8 +5,7 @@ require 'php/config.php';
 include 'php/head.php';
 include 'php/navbar.php';
 $_SESSION['error'] = "";
-$ipuser = $_SERVER['REMOTE_ADDR'];
-echo $ipuser;
+$ip = $_SERVER['REMOTE_ADDR'];
 ?>
 
 <div class="container">
