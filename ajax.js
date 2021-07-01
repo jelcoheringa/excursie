@@ -50,7 +50,7 @@ function PostsLoad() {
 }
 function liked(postID)
 {
-    alert("Like gegeven");
+    // alert("Like gegeven");
     let xmlHttp = InitAJAX();
 
     // Wat moet er gebeuren bij statuswijzigingen?
@@ -60,11 +60,11 @@ function liked(postID)
         if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
         {
             // Plaats de tekst in de pagina
-            alert("Like gegeven");
+            // alert("Like gegeven");
         }
     }
     // Verstuur het request
-    xmlHttp.open("GET", "php/likeVerwerk.php?postID="+postID+"&ip="+userIp+"", true);
+    xmlHttp.open("GET", "php/likeVerwerk.php?postID="+postID+"", true);
     xmlHttp.send();
 
 }
