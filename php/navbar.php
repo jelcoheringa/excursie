@@ -8,7 +8,7 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="">Populair</a>
+                    <a class="nav-link" href="populair.php">Populair</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="studenten.php">Studenten</a>

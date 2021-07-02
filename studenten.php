@@ -1,6 +1,6 @@
 <?php
 session_start();
-$page = "Home";
+$page = "Studenten";
 require 'php/config.php';
 include 'php/head.php';
 include 'php/navbar.php';
@@ -10,7 +10,7 @@ include 'php/navbar.php';
             <div class="col-md-6 fotoSide">
             </div>
             <div class="col-md-6">
-                <div class="list-group" style="max-width: 80%">
+                <div class="list-group studenten" style="max-width: 80%">
                     <?php
                     $query = "SELECT * FROM users ORDER BY userID DESC";
                     $resultaat = mysqli_query($mysqli, $query);

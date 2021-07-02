@@ -81,6 +81,9 @@ body{
 .post{
     padding-top: 1em;
 }
+.poppost{
+    margin: 1em 1em;
+}
 .btn-primary:hover{
     background-color: #67b807;!important;
     border-color: #8FE507;
@@ -89,6 +92,9 @@ body{
     border: none;
     background: none;
     text-decoration: none;
+}
+.studenten{
+    margin-left: 1em;
 }
 @media only screen and (max-width: 767px) {
     .loginBoxDiv{

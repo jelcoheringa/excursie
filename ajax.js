@@ -28,7 +28,7 @@ function InitAJAX() {
 }
 window.onload=function(){
     PostsLoad();
-
+    populair();
 }
 function PostsLoad() {
     let xmlHttp = InitAJAX();
@@ -45,6 +45,23 @@ function PostsLoad() {
     }
     // Verstuur het request
     xmlHttp.open("GET", "php/postUitlees.php", true);
+    xmlHttp.send();
+
+}
+function populair() {
+    let xmlHttp = InitAJAX();
+    // Wat moet er gebeuren bij statuswijzigingen?
+    xmlHttp.onreadystatechange = function ()
+    {
+        // Is het request al helemaal klaar en OK?
+        if (xmlHttp.readyState === 4 && xmlHttp.status === 200)
+        {
+            // Plaats de tekst in de pagina
+            document.getElementById("populair").innerHTML = xmlHttp.responseText;
+        }
+    }
+    // Verstuur het request
+    xmlHttp.open("GET", "php/populairUitlees.php", true);
     xmlHttp.send();
 
 }

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$page = "Home";
+$page = "Student";
 require 'php/config.php';
 include 'php/head.php';
 include 'php/navbar.php';
