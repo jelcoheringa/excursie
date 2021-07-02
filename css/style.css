@@ -79,7 +79,8 @@ body{
     margin-top: 1em;
 }
 .post{
-    padding-top: 1em;
+    padding: none;
+    margin: 1em 0;
 }
 .poppost{
     margin: 1em 1em;

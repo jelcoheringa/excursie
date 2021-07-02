@@ -22,7 +22,7 @@ if (!empty($_POST["newemail"]) &&
                 $achternaam = $mysqli -> real_escape_string($_POST['newachternaam']);
                 $email = $mysqli -> real_escape_string($_POST['newemail']);
                 $wachtwoord = $mysqli -> real_escape_string($_POST['newwachtwoord']);
-                $hash = md5( rand(0,1000) ); //random hash
+                $hash = md5( rand(1390,9999) ); //random hash
                 $password = rand(1000,6000); //random password
                 $userpassword = md5($wachtwoord);
                 $NULL = "NULL";

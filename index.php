@@ -14,7 +14,7 @@ $ip = $_SERVER['REMOTE_ADDR'];
 
         </div>
         <div class="col-md-4">
-            <div class="list-group" style="max-width: 80%">
+            <div class="list-group" style="width: 100%; margin-bottom: 1em">
             <?php
             $query = "SELECT * FROM users ORDER BY userID DESC LIMIT 10";
             $resultaat = mysqli_query($mysqli, $query);
