@@ -26,11 +26,12 @@ if (!empty($_POST["newemail"]) &&
                 $password = rand(1000,6000); //random password
                 $userpassword = md5($wachtwoord);
                 $NULL = "NULL";
+                $active = 1;
 
 
-                $sql = " INSERT INTO users (userFirstname, userLastname, userEmail, userPassword, hash) VALUES (?, ?, ?, ?, ?)";
+                $sql = " INSERT INTO users (userFirstname, userLastname, userEmail, userPassword, hash) VALUES (?, ?, ?, ?, ?, ?)";
                 if ($stmt = $mysqli->prepare($sql)) {
-                    $stmt->bind_param('ssssi', $voornaam, $achternaam, $email, $userpassword, $hash);
+                    $stmt->bind_param('ssssi', $voornaam, $achternaam, $email, $userpassword, $hash, $active);
 
                     $voornaam = $mysqli -> real_escape_string($_POST['newvoornaam']);
                     $achternaam = $mysqli -> real_escape_string($_POST['newachternaam']);
